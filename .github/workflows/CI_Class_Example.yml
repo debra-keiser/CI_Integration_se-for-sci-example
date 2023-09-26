@@ -39,3 +39,5 @@ matrix-test:
   - name: Test package
     run: python -m pytest
   - name: Example if statement
+    if: runner.os == 'Linux'
+    run: echo "This step runs only on Linux"
